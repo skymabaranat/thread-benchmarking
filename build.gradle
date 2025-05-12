@@ -1,0 +1,26 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'package com.example.threadbenchmarkingapp'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.knowm.xchart:xchart:3.8.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
