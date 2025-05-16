@@ -43,7 +43,6 @@ public class ThreadBenchmarkingApplication {
         chart.addSeries("Normal Threads", new ArrayList<>(normalResults.keySet()), new ArrayList<>(normalResults.values()));
         chart.addSeries("Virtual Threads", new ArrayList<>(virtualResults.keySet()), new ArrayList<>(virtualResults.values()));
 
-        // Display the chart
         SwingWrapper<XYChart> wrapper = new SwingWrapper<>(chart);
         wrapper.displayChart();
     }
