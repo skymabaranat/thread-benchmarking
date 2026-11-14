@@ -1,6 +1,10 @@
 # thread-benchmarking
 Benchmarking virtual vs platform threads visualistions
 
+## Java concurrency triage
+
+Reproduce a slow downstream dependency under the same load with platform and virtual threads. Then use the Java CLI to explain where requests waited from a saved Flight Recorder capture and service metrics. [Triage quickstart and runbook](triage/README.md)
+
 ---
 ### ⚽️GOAL: Generate a table and chart visualisation of performance of virtual vs platform threads over large number of threads
 ---
